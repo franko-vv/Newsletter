@@ -1,9 +1,10 @@
-<!--<?xml version="1.0"?>
+<?xml version="1.0"?>
+
 <config>
     <modules>
-        <Nine_Newsletterone>
+        <Inchoo_DBScript>
             <active>true</active>
             <codePool>local</codePool>
-        </Nine_Newsletterone>
+        </Inchoo_DBScript>
     </modules>
-</config>-->
+</config>
