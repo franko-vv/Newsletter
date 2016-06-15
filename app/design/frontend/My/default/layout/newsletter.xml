@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
     <default>
-        <reference name="footer">
-            <block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" before="-" template="newsletter/subscribe.phtml"/>
+        <reference name="header">
+            <block type="newsletter/subscribe" name="header.newsletter" as="newsletter" before="-" template="newsletter/subscribe.phtml"/>
         </reference>
     </default>
 </layout>
