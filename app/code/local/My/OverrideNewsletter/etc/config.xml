@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <My_OverrideNewsletter>
+            <version>0.1.0</version>
+        </My_OverrideNewsletter>
+    </modules>
+
+    <global>
+        <resources>
+            <my_overridenewsletter_setup>
+                <setup>
+                    <module>My_OverrideNewsletter</module>
+                </setup>
+            </my_overridenewsletter_setup>
+        </resources>
+    </global>
+</config>
