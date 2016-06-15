@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+ * User: Виталий
  * Date: 15.06.2016
  * Time: 18:47
  */
@@ -38,11 +38,14 @@ class My_OverrideNewsletter_SubscriberController extends Mage_Newsletter_Subscri
                 }
 
                 $status = Mage::getModel('newsletter/subscriber')->subscribe($email);
+
                 if ($this->getRequest()->getPost('firstName'))
                 {
                     $subscriber = Mage::getModel('newsletter/subscriber')->loadByEmail($email);
                     $name     = (string) $this->getRequest()->getPost('firstName');
+                    $subscriber->setSubscriberName($name);
                     $subscriber->save();
+                }
 
                 if ($status == Mage_Newsletter_Model_Subscriber::STATUS_NOT_ACTIVE) {
                     $session->addSuccess($this->__('Confirmation request has been sent.'));
