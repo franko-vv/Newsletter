@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+<!--<?xml version="1.0"?>
 <config>
     <modules>
-        <My_Newsletteron>
+        <Nine_Newsletterone>
             <active>true</active>
             <codePool>local</codePool>
-        </My_Newsletteron>
+        </Nine_Newsletterone>
     </modules>
-</config>
+</config>-->

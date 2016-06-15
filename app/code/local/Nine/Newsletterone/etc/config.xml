@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <config>
     <modules>
-        <My_Newsletteron>
+        <Nine_Newsletterone>
             <version>0.1.0</version>
-        </My_Newsletteron>
+        </Nine_Newsletterone>
     </modules>
 
     <newsletterone_setup>
         <setup>
-            <module>My_Newsletteron</module>
-            <class>My_Newsletteron_Model_Resource_Mysql4_Setup</class>
+            <module>Nine_Newsletterone</module>
+            <class>Nine_Newsletterone_Model_Resource_Mysql4_Setup</class>
         </setup>
         <connection>
             <use>core_setup</use>
@@ -20,20 +20,18 @@
         <models>
             <newsletter>
                 <rewrite>
-                    <subscriber>My_Newsletteron_Model_Subscriber</subscriber>
+                    <subscriber>Nine_Newsletterone_Model_Subscriber</subscriber>
                 </rewrite>
             </newsletter>
         </models>
     </global>
-
-
 
     <frontend>
         <routers>
             <newsletter>
                 <args>
                     <modules>
-                        <My_Newsletteron before="Mage_Newsletter">My_Newsletteron</My_Newsletteron>
+                        <Nine_Newsletterone before="Mage_Newsletter">Nine_Newsletterone</Nine_Newsletterone>
                     </modules>
                 </args>
             </newsletter>
