@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <My_Newsletteron>
+            <version>0.1.0</version>
+        </My_Newsletteron>
+    </modules>
+
+    <newsletterone_setup>
+        <setup>
+            <module>My_Newsletteron</module>
+            <class>My_Newsletteron_Model_Resource_Mysql4_Setup</class>
+        </setup>
+        <connection>
+            <use>core_setup</use>
+        </connection>
+    </newsletterone_setup>
+
+    <global>
+        <models>
+            <newsletter>
+                <rewrite>
+                    <subscriber>My_Newsletteron_Model_Subscriber</subscriber>
+                </rewrite>
+            </newsletter>
+        </models>
+    </global>
+
+
+
+    <frontend>
+        <routers>
+            <newsletter>
+                <args>
+                    <modules>
+                        <My_Newsletteron before="Mage_Newsletter">My_Newsletteron</My_Newsletteron>
+                    </modules>
+                </args>
+            </newsletter>
+        </routers>
+    </frontend>
+</config>
