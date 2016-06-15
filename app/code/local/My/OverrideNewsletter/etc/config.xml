@@ -16,4 +16,16 @@
             </my_overridenewsletter_setup>
         </resources>
     </global>
+
+    <frontend>
+        <routers>
+                <args>
+                    <modules>
+                        <My_OverrideNewsletter before="Mage_Newsletter">My_OverrideNewsletter</My_OverrideNewsletter>
+                    </modules>
+                </args>
+            </newsletter>
+        </routers>
+    </frontend>
+
 </config>
