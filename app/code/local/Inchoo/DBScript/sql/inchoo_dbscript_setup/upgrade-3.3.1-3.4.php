@@ -7,13 +7,12 @@ $installer->startSetup();
 
 $installer->getConnection()
     ->addColumn($installer->getTable('newsletter/subscriber'),
-        'subscrName',
+        'subscriber_namef',
         array(
-            'type' => Varien_Db_Ddl_Table::TYPE_VARCHAR,
-            'length' => 50,
+            'type' => Varien_Db_Ddl_Table::TYPE_TEXT,
             'nullable' => true,
             'default' => null,
-            'comment' => 'subscrName'
+            'comment' => 'Subscriber Name'
         )
     );
 

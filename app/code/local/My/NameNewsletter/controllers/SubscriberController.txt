@@ -5,6 +5,7 @@
  * Date: 15.06.2016
  * Time: 18:47
  */
+
 require_once("Mage/Newsletter/controllers/SubscriberController.php");
 class My_OverrideNewsletter_SubscriberController extends Mage_Newsletter_SubscriberController
 {
@@ -43,7 +44,7 @@ class My_OverrideNewsletter_SubscriberController extends Mage_Newsletter_Subscri
                 {
                     $subscriber = Mage::getModel('newsletter/subscriber')->loadByEmail($email);
                     $name     = (string) $this->getRequest()->getPost('firstName');
-                    $subscriber->setSubscriberName($name);
+                    $subscriber->setSubscriberNameINstall($name);
                     $subscriber->save();
                 }
 

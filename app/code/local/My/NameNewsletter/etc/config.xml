@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <My_NameNewsletter>
+            <version>1.0.0</version>
+        </My_NameNewsletter>
+    </modules>
+
+    <global>
+        <resources>
+            <my_namenewsletter_setup>
+                <setup>
+                    <module>My_NameNewsletter</module>
+                </setup>
+            </my_namenewsletter_setup>
+        </resources>
+    </global>
+    <!--
+        <frontend>
+            <routers>
+                <newsletter>
+                    <args>
+                        <modules>
+                            <My_OverrideNewsletter before="Mage_Newsletter">My_OverrideNewsletter</My_OverrideNewsletter>
+                        </modules>
+                    </args>
+                </newsletter>
+            </routers>
+        </frontend>
+    -->
+</config>

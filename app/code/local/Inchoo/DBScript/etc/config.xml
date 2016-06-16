@@ -3,10 +3,10 @@
 <config>
     <modules>
         <Inchoo_DBScript>
-            <version>3.2.0.1</version>
+            <version>3.4</version>
         </Inchoo_DBScript>
     </modules>
-
+<!--
     <global>
         <models>
             <inchoo_dbscript>
@@ -34,4 +34,5 @@
             </inchoo_dbscript_setup>
         </resources>
     </global>
+    -->
 </config>
