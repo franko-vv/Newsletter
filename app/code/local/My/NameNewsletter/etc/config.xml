@@ -8,6 +8,12 @@
     </modules>
 
     <global>
+        <models>
+            <my_namenewsletter>
+                <class>My_NameNewsletter_Model</class>
+            </my_namenewsletter>
+        </models>
+
         <resources>
             <my_namenewsletter_setup>
                 <setup>
@@ -16,17 +22,17 @@
             </my_namenewsletter_setup>
         </resources>
     </global>
-    <!--
-        <frontend>
-            <routers>
-                <newsletter>
-                    <args>
-                        <modules>
-                            <My_OverrideNewsletter before="Mage_Newsletter">My_OverrideNewsletter</My_OverrideNewsletter>
-                        </modules>
-                    </args>
-                </newsletter>
-            </routers>
-        </frontend>
-    -->
+
+    <frontend>
+        <routers>
+            <newsletter>
+                <args>
+                    <modules>
+                        <My_NameNewsletter before="Mage_Newsletter">My_NameNewsletter</My_NameNewsletter>
+                    </modules>
+                </args>
+            </newsletter>
+        </routers>
+    </frontend>
+
 </config>
